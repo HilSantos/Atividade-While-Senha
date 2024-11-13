@@ -13,20 +13,20 @@ public class Program
 {
 static void Main(string[] args)
 {
-string senha;
+            string senha;
 
-Console.WriteLine("Informe a senha: ");
-senha = Console.ReadLine();
-senha = senha.ToLower();
+  Console.Write("Digite a senha: ");
+            senha = Console.ReadLine();
 
-while (senha != "12345")
-{
-Console.WriteLine("Digite a senha correta: ");
-senha = Console.ReadLine();
-}
-Console.WriteLine("Acesso Liberado - O.K.!");
+  while (senha != "12345")
+            {
+                Console.WriteLine("Senha incorreta. Tente novamente.");
+                Console.Write("Digite a senha: ");
+                senha = Console.ReadLine();
+            }
 
-Console.ReadKey();
-}
-}
+  Console.WriteLine("Acesso concedido!");
+            Console.ReadKey();
+        }
+    }
 }
